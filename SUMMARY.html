@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>System Architecture Summary</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 20px auto; padding: 0 20px; color: #333; }
+        h1 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        ul { background: #f9f9f9; padding: 20px 40px; border-radius: 8px; }
+        li { margin-bottom: 10px; }
+        b { color: #2980b9; }
+    </style>
+</head>
+<body>
+
+    <h1>System Architecture Summary</h1>
+
+    <p>Our solution implements a high-performance UDP transport protocol optimized for low latency and high reliability under lossy network conditions.</p>
+
+    <ul>
+        <li><b>Jitter Buffer:</b> We utilized a circular ring buffer with <i>O(1)</i> complexity to reorder out-of-order packets efficiently without the overhead of dynamic memory allocation.</li>
+        <li><b>Time-Aware Playout:</b> By calculating absolute delivery deadlines using <i>T0</i> and <i>DELAY_MS</i>, the receiver identifies and drops fundamentally lost packets early, successfully preventing "Head-of-Line" blocking.</li>
+        <li><b>Bandwidth Efficiency:</b> We implemented <b>NACK Batching</b>, where multiple missing sequence numbers are packed into a single UDP feedback packet, ensuring our bandwidth overhead remains well below the 2.00x threshold even during significant packet loss.</li>
+        <li><b>Retransmission Logic:</b> The sender maintains a history buffer that allows for instantaneous retransmission of missing frames, throttled by a cooldown timer to prevent network congestion.</li>
+    </ul>
+
+    <p><i>The overall architecture follows a standard Sliding Window Protocol implementation, as shown below:</i></p>
+    
+
+</body>
+</html>
