@@ -10,13 +10,9 @@
 ## Test Run: Profile A (Mild Network)
 * **Command:** `python3 run.py --profile profiles/A.json --delay_ms 100`
 * **Result:**
-relay done: {'up_bytes': 270108, 'down_bytes': 588, 'up_pkts': 1647, 'down_pkts': 143, 'dropped': 41, 'duplicated': 13}
-================ SCORE ================
-  frames               : 1500
-  deadline misses      : 9  (0.60%)   [cap 1.00%]
-  playout delay        : 100 ms   <-- your score if valid; lower wins
-  bandwidth overhead   : 1.13x   [cap 2.00x]   (up 270108B, feedback 588B)
-  RESULT               : VALID
+  <img width="1113" height="199" alt="{40ACB1D1-F3E8-4051-A1B1-D03674B3E126}" src="https://github.com/user-attachments/assets/28b56ca0-513e-4e46-bc75-f4268322f2a7" />
+
+
 
 
 ## Test Run: Profile B (Moderate Network)
