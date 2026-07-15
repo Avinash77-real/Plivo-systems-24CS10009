@@ -18,5 +18,6 @@
 ## Test Run: Profile B (Moderate Network)
 * **Command:** `python3 run.py --profile profiles/B.json --delay_ms 200`
 * **Result:**
-![Uploading {5CE520E7-370D-426A-8B87-A0129C1C19C8}.png…]()
+<img width="1121" height="199" alt="{5CE520E7-370D-426A-8B87-A0129C1C19C8}" src="https://github.com/user-attachments/assets/af915ee4-12c5-40aa-818f-a42c99129433" />
+
 
