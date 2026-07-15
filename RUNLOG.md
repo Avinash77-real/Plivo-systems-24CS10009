@@ -18,10 +18,5 @@
 ## Test Run: Profile B (Moderate Network)
 * **Command:** `python3 run.py --profile profiles/B.json --delay_ms 200`
 * **Result:**
-relay done: {'up_bytes': 343908, 'down_bytes': 2512, 'up_pkts': 2097, 'down_pkts': 546, 'dropped': 147, 'duplicated': 28}
-================ SCORE ================
-  frames               : 1500
-  deadline misses      : 12  (0.80%)   [cap 1.00%]
-  playout delay        : 200 ms   <-- your score if valid; lower wins
-  bandwidth overhead   : 1.44x   [cap 2.00x]   (up 343908B, feedback 2512B)
-  RESULT               : VALID
+![Uploading {5CE520E7-370D-426A-8B87-A0129C1C19C8}.png…]()
+
